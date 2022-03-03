@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.p, .t, .v {
+    border: 3px solid transparent;
+    min-height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p {
+    border-color: #ffffba;
+    grid-area: area-p;
+}
+
+.t {
+    border-color: #ffdfba;
+    grid-area: area-t;
+}
+
+.v {
+    border-color: #baffc9;
+    grid-area: area-v;
+
+    height: 0;
+    padding-bottom: calc(100% * 315 / 560);
+    position: relative;
+}
+
+.v iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: grid;
+}
+
+picture {
+    line-height: 0;
+}
+
+img {
+    max-width: 100%;
+}
